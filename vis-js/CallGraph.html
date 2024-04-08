@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+	<style type="text/css">
+	#chartContainer {
+		height: 800px;
+		width: 100%;
+		border: 1px solid lightgray;
+	}
+	</style>
+	<title>コールグラフ</title>
+</head>
+
+<body>
+	<div>
+		<input type="file" id="NodesFile">
+		<input type="file" id="EdgesFile">
+		<input type="button" id="ExeChart" value="ExeChart">
+	</div>
+	<br/>
+	<div id="DummyNodesDiv"></div><br/><br/>
+	<div id="DummyEdgesDiv"></div><br/>
+	<div id="chartContainer"></div>
+	<script type="text/javascript" src="./digraph_vis.js"></script>
+</body>
+
+</html>
